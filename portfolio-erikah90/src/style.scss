@@ -256,7 +256,7 @@ font-family: 'Urbanist', 'sans-serif';
 
   .menu {
     flex-direction: row;
-    gap: 8px;
+    gap: 5px;
   }
 
   .skills-pic, .projects-wrapper {
@@ -273,7 +273,7 @@ font-family: 'Urbanist', 'sans-serif';
   }
 
   .icons {
-   position: static;   // eller ta bort helt
+   position: static; 
   margin-top: 2rem;
   }
   
