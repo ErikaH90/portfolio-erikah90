@@ -1,0 +1,291 @@
+$background: #fbf1ef;
+$text: #111111;
+$text-light: #6b7280;
+$border: #e5e7eb;
+$section: #ffffff;
+$table: #f5e6e3;
+
+body {
+    background-color: $background;
+}
+
+.header {
+    background-color: $section;
+    padding: 10px;
+    text-align: left;
+}
+
+img {
+    width: 300px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    margin-top: 50px;
+}
+
+.name {
+    color: $text;
+    font-family: 'La Belle Aurore', cursive;
+    font-size: 3.5em;
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-top: 50px;
+}
+
+.icons-header {
+    text-align: center;
+    gap: 20px;
+}
+
+.icons-header a {
+  text-decoration: none;
+}
+
+.title {
+    color: $text-light;
+    font-family: 'Urbanist', sans-serif;
+    font-size: 2em;
+}
+
+.role {
+    background-color: $background;
+    color: $text;
+    font-size: 2em;
+    text-align: center;
+    padding: 20px;
+}
+
+.navbar {
+  background-color: $section;
+  border-color: $border;
+  width: 100%;
+  padding: 30px;
+}
+
+.menu {
+  list-style: none;
+  display: flex;           
+  justify-content: center;
+  gap: 30px;                
+  margin: 0;
+  padding: 0;
+}
+
+.menu a {
+  text-decoration: none;
+  color: $text;
+  font-family: 'Urbanist', cursive;
+  font-size: 20px;
+  transition: 0.3s;
+}
+
+.menu a:hover {
+  color: $text-light;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.intro {
+font-family: 'Urbanist', 'sans-serif';
+  width: 60%;
+  background: $section;
+  padding: 2rem;
+  margin-top: 2rem;
+  border-radius: 10px; 
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.erika {
+  width: 300px;
+  height: 300px;
+  border-radius: 65%;
+  object-fit: cover;
+}
+
+.aboutme {
+  line-height: 1.9em;
+}
+
+.skills-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+ table {
+            border-collapse: collapse;
+            width: 60%;
+            margin: 20px auto;
+        }
+        th, td {
+            border: 1px solid $table;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: $section;
+        }
+
+.skills-pic {
+  font-family: 'Urbanist', 'sans-serif';
+  display: flex;
+  background: $section;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem;
+  margin-top: 2rem;
+  gap: 2rem;
+  border-radius: 10px; 
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.skills-picture {
+  width: 40%;
+  display: block;
+  height: auto;
+}
+
+.projects-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 2rem; 
+}
+
+.todo-project, .SL-project {
+  width: 40%;
+  background: $section;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  margin-bottom: 20px;
+}
+
+.projects-wrapper a {
+  text-decoration: none;
+  color: $text;
+  font-family: 'Urbanist', 'sans-serif';
+  border: 1px solid $border;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: 0.3s;
+  line-height: 3em;
+}
+
+.projects {
+    background-color: $background;
+    color: $text;
+    font-family: 'Urbanist', 'sans-serif';
+    padding: 20px;
+    text-align: center;
+}
+
+.contact-title {
+  margin-left: 50px;
+  margin-top: 50px;
+}
+
+
+.scene {
+  position: relative;
+  width: 80%;
+  height: 400px;
+  margin: 50px auto;
+  background: $section;
+  overflow: hidden;
+}
+
+.letter {
+  position: absolute;
+  width: 120px;
+  left: 800px;
+  bottom: 200px;
+  animation: float 1s ease-in-out infinite;
+}
+
+.computer {
+  position: absolute;
+  width: 200px;
+  left: 700px;
+  bottom: 30px;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.icons {
+    background-color: $section;
+    padding: 20px;
+    position: absolute;
+    left: 200px;
+    bottom: 100px;
+}
+
+.icons a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: $text;
+    font-family: 'Urbanist', 'sans-serif';
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    background-size: cover;
+    margin: 0 5px;
+}
+
+@media (max-width: 768px) {
+  .intro, .skills-pic, .todo-project, .SL-project {
+    width: 90%;
+    padding: 1rem;
+  }
+
+  .menu {
+    flex-direction: row;
+    gap: 8px;
+  }
+
+  .skills-pic, .projects-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .skills-picture {
+    width: 80%;
+  }
+  
+  .scene {
+    height: 500px;
+  }
+
+  .icons {
+   position: static;   // eller ta bort helt
+  margin-top: 2rem;
+  }
+  
+  .letter {
+    left: 70%;
+    transform: translateX(-50%);
+    bottom: 180px;
+  }
+  
+  .computer {
+    left: 70%;
+    transform: translateX(-50%);
+    bottom: 20px;
+  }
+}
