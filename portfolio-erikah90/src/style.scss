@@ -100,6 +100,18 @@ font-family: 'Urbanist', 'sans-serif';
   box-shadow: 0 10px 30px rgba(0,0,0,0.05);
 }
 
+.resume {
+text-decoration: none;
+color: $text;
+font-family: 'Urbanist', 'sans-serif';
+border: 1px solid $border;
+padding: 10px 20px;
+border-radius: 5px;
+transition: 0.3s;
+display: inline-block;
+margin-top: 20px;
+}
+
 .erika {
   width: 300px;
   height: 300px;
@@ -256,7 +268,8 @@ font-family: 'Urbanist', 'sans-serif';
 
   .menu {
     flex-direction: row;
-    gap: 5px;
+    flex-wrap: wrap;
+    gap: 10px;
   }
 
   .skills-pic, .projects-wrapper {
@@ -273,18 +286,18 @@ font-family: 'Urbanist', 'sans-serif';
   }
 
   .icons {
-   position: static; 
+  position: static; 
   margin-top: 2rem;
   }
   
   .letter {
-    left: 70%;
+    left: 50%;
     transform: translateX(-50%);
     bottom: 180px;
   }
   
   .computer {
-    left: 70%;
+    left: 50%;
     transform: translateX(-50%);
     bottom: 20px;
   }
